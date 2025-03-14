@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Distribution System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exclusive Coupon Offers</h1>
+            <p>Claim your limited-time discount coupon below!</p>
+        </header>
+        
+        <main>
+            <div class="coupon-card">
+                <div class="coupon-image">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="coupon-content">
+                    <h2>Your Special Offer</h2>
+                    <div id="coupon-result">
+                        <p>Click the button below to claim your coupon. Each user can claim one coupon per hour.</p>
+                    </div>
+                    <button id="claim-button" class="claim-button">Get My Coupon</button>
+                    <div id="loading" class="loading hidden">
+                        <div class="spinner"></div>
+                        <p>Processing your request...</p>
+                    </div>
+                    <div id="countdown" class="countdown hidden">
+                        <p>Time remaining until next coupon: <span id="time-left">--:--</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>How It Works</h3>
+                <ul>
+                    <li>Coupons are distributed on a first-come, first-served basis.</li>
+                    <li>Each user can claim one coupon per hour.</li>
+                    <li>Coupons are distributed in a round-robin manner to ensure fair distribution.</li>
+                    <li>To prevent abuse, we track IP addresses and use browser cookies.</li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 Coupon Distribution System. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="client.js"></script>
+</body>
+</html>
